@@ -1,0 +1,12 @@
+# environment.yml  (Conda users)
+name: atus_env
+channels:
+  - conda-forge     # always put conda-forge first for latest builds
+dependencies:
+  - python=3.11     # lock the interpreter version
+  - pandas>=2.2
+  - numpy>=1.26
+  - requests>=2.31
+  - lxml>=5.2
+  - tqdm>=4.66
+  - pip   

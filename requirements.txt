@@ -1,0 +1,21 @@
+# requirements.txt  (pip users)
+requests>=2.31
+pandas>=2.2
+numpy>=1.26
+lxml>=5.2
+tqdm>=4.66
+beautifulsoup4>=4.12
+scikit-learn>=1.4
+scipy>=1.11
+matplotlib>=3.8
+seaborn>=0.12
+statsmodels>=0.14
+pyarrow>=15.0      # ← new line
+
+
+# Jupyter & kernels
+jupyter>=1.0          # meta-package pulls notebook, qtconsole, nbconvert…
+ipykernel>=6.29
+
+# Optional but recommended
+jupytext>=1.16        # sync .ipynb <-> .py
