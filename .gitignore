@@ -1,5 +1,17 @@
 # Ignore raw data files
+# data & artifacts
+atus_analysis/data/
+*.dat
+*.npy
+*.parquet
 
+# notebooks/cache
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# local envs
+.venv/
 # Ignore all data and checkpoints
 atus_analysis/data/
 *.dat
