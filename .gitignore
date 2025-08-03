@@ -1,0 +1,12 @@
+# Ignore raw data files
+atus_analysis/data/raw/
+atus_analysis/data/processed/
+atus_analysis/data/sequences/
+
+# Ignore checkpoints and cache
+*.npy
+*.parquet
+*.dat
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
