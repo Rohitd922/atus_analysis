@@ -72,7 +72,7 @@ elif all(c in act.columns for c in
 
 else:
     raise KeyError(
-        "❌  Cannot locate activity-code variables. "
+        "Cannot locate activity-code variables. "
         "Expected TRCODEP or TUTIER1CODE/2CODE/3CODE.\n"
         f"Columns present: {list(act.columns)[:20]} …"
     )
@@ -83,7 +83,7 @@ for cand in ("TUSTARTTIM", "TRSTTIME", "TRSTARTTIM"):
         start_col = cand
         break
 else:
-    raise KeyError("❌  Start-time column not found "
+    raise KeyError("Start-time column not found "
                    "(looked for TUSTARTTIM, TRSTTIME, TRSTARTTIM).")
 
 # --- 4C.  Order episodes within each diary ----------------------------------

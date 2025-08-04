@@ -1,0 +1,432 @@
+code,text,major2,sub_name,major_class,count
+010101,Sleeping,01,SLEEP,NON_ELECTRIC,0
+010102,Sleeplessness,01,SLEEP,NON_ELECTRIC,0
+010199,"Sleeping, n.e.c.*",01,SLEEP,NON_ELECTRIC,0
+010201,"Washing, dressing and grooming oneself",01,PERSONAL_CARE,NON_ELECTRIC,0
+010299,"Grooming, n.e.c.*",01,PERSONAL_CARE,NON_ELECTRIC,0
+010301,Health-related self care,01,PERSONAL_CARE,NON_ELECTRIC,0
+010399,"Self care, n.e.c.*",01,PERSONAL_CARE,NON_ELECTRIC,0
+010401,Personal/Private activities,01,PERSONAL_CARE,NON_ELECTRIC,0
+010499,"Personal activities, n.e.c.*",01,PERSONAL_CARE,NON_ELECTRIC,0
+010501,Personal emergencies,01,PERSONAL_CARE,NON_ELECTRIC,0
+010599,"Personal care emergencies, n.e.c.*",01,PERSONAL_CARE,NON_ELECTRIC,0
+019999,"Personal care, n.e.c.*",01,PERSONAL_CARE,NON_ELECTRIC,0
+020101,Interior cleaning,02,CLEANING_VACUUM,ELECTRICITY_CONSUMING,0
+020102,Laundry,02,LAUNDRY,ELECTRICITY_CONSUMING,0
+020103,"Sewing, repairing, & maintaining textiles",02,OTHER_NON_ELEC,NON_ELECTRIC,0
+020104,"Storing interior hh items, inc. food",02,OTHER_NON_ELEC,NON_ELECTRIC,0
+020199,"Housework, n.e.c.*",02,CLEANING_VACUUM,ELECTRICITY_CONSUMING,0
+020201,Food and drink preparation,02,COOKING,ELECTRICITY_CONSUMING,0
+020202,Food presentation,02,COOKING,ELECTRICITY_CONSUMING,0
+020203,Kitchen and food clean-up,02,DISHWASHING,ELECTRICITY_CONSUMING,0
+020299,"Food & drink prep, presentation, & clean-up, n.e.c.*",02,DISHWASHING,ELECTRICITY_CONSUMING,0
+020301,"Interior arrangement, decoration, & repairs",02,OTHER_NON_ELEC,NON_ELECTRIC,0
+020302,Building and repairing furniture,02,APPLIANCE_TOOL_USE,ELECTRICITY_CONSUMING,0
+020303,Heating and cooling,02,HVAC_ADJUST,ELECTRICITY_CONSUMING,0
+020399,"Interior maintenance, repair, & decoration, n.e.c.*",02,OTHER_NON_ELEC,NON_ELECTRIC,0
+020401,Exterior cleaning,02,OUTSIDE_HOUSE,NON_ELECTRIC,0
+020402,"Exterior repair, improvements, & decoration",02,OUTSIDE_HOUSE,NON_ELECTRIC,0
+020499,"Exterior maintenance, repair & decoration, n.e.c.*",02,OUTSIDE_HOUSE,NON_ELECTRIC,0
+020501,"Lawn, garden, and houseplant care",02,OUTSIDE_HOUSE,NON_ELECTRIC,0
+020502,"Ponds, pools, and hot tubs",02,OUTSIDE_HOUSE,NON_ELECTRIC,0
+020599,"Lawn and garden, n.e.c.*",02,OUTSIDE_HOUSE,NON_ELECTRIC,0
+020681,"Care for animals and pets (not veterinary care) includes 020601 (all years), 020602 (2008 and later years)",02,OTHER_NON_ELEC,NON_ELECTRIC,0
+020699,"Pet and animal care, n.e.c.*",02,OTHER_NON_ELEC,NON_ELECTRIC,0
+020701,Vehicle repair and maintenance (by self),02,APPLIANCE_TOOL_USE,ELECTRICITY_CONSUMING,0
+020799,"Vehicles, n.e.c.*",02,APPLIANCE_TOOL_USE,ELECTRICITY_CONSUMING,0
+020801,"Appliance, tool, and toy set-up, repair, & maintenance (by self)",02,APPLIANCE_TOOL_USE,ELECTRICITY_CONSUMING,0
+020899,"Appliances and tools, n.e.c.*",02,APPLIANCE_TOOL_USE,ELECTRICITY_CONSUMING,0
+020901,Financial management,02,ADMIN_AT_HOME,NON_ELECTRIC,0
+020902,Household & personal organization and planning,02,ADMIN_AT_HOME,NON_ELECTRIC,0
+020903,HH & personal mail & messages (except e-mail),02,ADMIN_AT_HOME,NON_ELECTRIC,0
+020904,HH & personal e-mail and messages,02,ADMIN_AT_HOME,ELECTRICITY_CONSUMING,0
+020905,Home security,02,OTHER_NON_ELEC,NON_ELECTRIC,0
+020999,"Household management, n.e.c.*",02,ADMIN_AT_HOME,NON_ELECTRIC,0
+029999,"Household activities, n.e.c.*",02,OTHER_NON_ELEC,NON_ELECTRIC,0
+030101,Physical care for hh children,03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030102,Reading to/with hh children,03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030103,"Playing with hh children, not sports",03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030104,Arts and crafts with hh children,03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030105,Playing sports with hh children,03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030186,"Talking with/listening to hh children includes 030106 (all years), 030107 (2003)",03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030108,Organization & planning for hh children,03,ADMIN_AT_HOME,NON_ELECTRIC,0
+030109,Looking after hh children (as a primary activity),03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030110,Attending hh children's events,03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030111,Waiting for/with hh children,03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030112,Picking up/dropping off hh children,03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030199,"Caring for & helping hh children, n.e.c.*",03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030201,Homework (hh children),03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030202,Meetings and school conferences (hh children),03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030203,Home schooling of hh children,03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030204,Waiting associated with hh children's education,03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030299,"Activities related to hh child's education, n.e.c.*",03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030301,Providing medical care to hh children,03,HEALTHCARE_OUT,OUT_OF_HOME,0
+030302,Obtaining medical care for hh children,03,HEALTHCARE_OUT,OUT_OF_HOME,0
+030303,Waiting associated with hh children's health,03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030399,"Activities related to hh child's health, n.e.c.*",03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030401,Physical care for hh adults,03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030402,Looking after hh adult (as a primary activity),03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030403,Providing medical care to hh adult,03,HEALTHCARE_OUT,OUT_OF_HOME,0
+030404,Obtaining medical and care services for hh adult,03,HEALTHCARE_OUT,OUT_OF_HOME,0
+030405,Waiting associated with caring for household adults,03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030499,"Caring for household adults, n.e.c.*",03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030501,Helping hh adults,03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030502,Organization & planning for hh adults,03,ADMIN_AT_HOME,NON_ELECTRIC,0
+030503,Picking up/dropping off hh adult,03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030504,Waiting associated with helping hh adults,03,OTHER_NON_ELEC,NON_ELECTRIC,0
+030599,"Helping household adults, n.e.c.*",03,OTHER_NON_ELEC,NON_ELECTRIC,0
+039999,"Caring for & helping hh members, n.e.c.*",03,OTHER_NON_ELEC,NON_ELECTRIC,0
+040101,Physical care for nonhh children,04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040102,Reading to/with nonhh children,04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040103,"Playing with nonhh children, not sports",04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040104,Arts and crafts with nonhh children,04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040105,Playing sports with nonhh children,04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040186,"Talking with/listening to nonhh children Includes 040106 (all years), 040107 (2003)",04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040108,Organization & planning for nonhh children,04,ADMIN_AT_HOME,NON_ELECTRIC,0
+040109,Looking after nonhh children (as primary activity),04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040110,Attending nonhh children's events,04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040111,Waiting for/with nonhh children,04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040112,Dropping off/picking up nonhh children,04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040199,"Caring for and helping nonhh children, n.e.c.*",04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040201,Homework (nonhh children),04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040202,Meetings and school conferences (nonhh children),04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040203,Home schooling of nonhh children,04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040204,Waiting associated with nonhh children's education,04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040299,"Activities related to nonhh child's educ., n.e.c.*",04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040301,Providing medical care to nonhh children,04,HEALTHCARE_OUT,OUT_OF_HOME,0
+040302,Obtaining medical care for nonhh children,04,HEALTHCARE_OUT,OUT_OF_HOME,0
+040303,Waiting associated with nonhh children's health,04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040399,"Activities related to nonhh child's health, n.e.c.*",04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040401,Physical care for nonhh adults,04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040402,Looking after nonhh adult (as a primary activity),04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040403,Providing medical care to nonhh adult,04,HEALTHCARE_OUT,OUT_OF_HOME,0
+040404,Obtaining medical and care services for nonhh adult,04,HEALTHCARE_OUT,OUT_OF_HOME,0
+040405,Waiting associated with caring for nonhh adults,04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040499,"Caring for nonhh adults, n.e.c.*",04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040501,"Housework, cooking, & shopping assistance for nonhh adults",04,CLEANING_VACUUM,ELECTRICITY_CONSUMING,0
+040502,House & lawn maintenance & repair assistance for nonhh adults,04,APPLIANCE_TOOL_USE,ELECTRICITY_CONSUMING,0
+040503,Animal & pet care assistance for nonhh adults,04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040504,Vehicle & appliance maintenance/repair assistance for nonhh adults,04,APPLIANCE_TOOL_USE,ELECTRICITY_CONSUMING,0
+040505,Financial management assistance for nonhh adults,04,ADMIN_AT_HOME,NON_ELECTRIC,0
+040506,Household management & paperwork assistance for nonhh adults,04,ADMIN_AT_HOME,NON_ELECTRIC,0
+040507,Picking up/dropping off nonhh adult,04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040508,Waiting associated with helping nonhh adults,04,OTHER_NON_ELEC,NON_ELECTRIC,0
+040599,"Helping nonhh adults, n.e.c.*",04,OTHER_NON_ELEC,NON_ELECTRIC,0
+049999,"Caring for & helping nonhh members, n.e.c.*",04,OTHER_NON_ELEC,NON_ELECTRIC,0
+050101,"Work, main job",05,WORK_SCHOOL,OUT_OF_HOME,0
+050102,"Work, other job(s)",05,WORK_SCHOOL,OUT_OF_HOME,0
+050103,Security procedures related to work,05,WORK_SCHOOL,OUT_OF_HOME,0
+050189,"Working, n.e.c.* Includes 050104 (2004 and later years); 050199 (all years)",05,WORK_SCHOOL,OUT_OF_HOME,0
+050201,"Socializing, relaxing, and leisure as part of job",05,WORK_SCHOOL,OUT_OF_HOME,0
+050202,Eating and drinking as part of job,05,EAT_DRINK,NON_ELECTRIC,0
+050203,Sports and exercise as part of job,05,WORK_SCHOOL,OUT_OF_HOME,0
+050204,Security procedures as part of job,05,WORK_SCHOOL,OUT_OF_HOME,0
+050289,"Work-related activities, n.e.c.* Includes 050205 (2004 and later years); 050299 (all years)",05,WORK_SCHOOL,OUT_OF_HOME,0
+050301,"Income-generating hobbies, crafts, and food",05,WORK_SCHOOL,OUT_OF_HOME,0
+050302,Income-generating performances,05,WORK_SCHOOL,OUT_OF_HOME,0
+050303,Income-generating services,05,WORK_SCHOOL,OUT_OF_HOME,0
+050304,Income-generating rental property activities,05,WORK_SCHOOL,OUT_OF_HOME,0
+050389,"Other income-generating activities, n.e.c.* Includes 050305 (2004 and later years); 050399 (All years)",05,WORK_SCHOOL,OUT_OF_HOME,0
+050481,Job search activities Includes 050401 (All years); 050402 (2003-2004),05,WORK_SCHOOL,OUT_OF_HOME,0
+050403,Job interviewing,05,WORK_SCHOOL,OUT_OF_HOME,0
+050404,Waiting associated with job search or interview,05,WORK_SCHOOL,OUT_OF_HOME,0
+050405,Security procedures rel. to job search/interviewing,05,WORK_SCHOOL,OUT_OF_HOME,0
+050499,"Job search and Interviewing, n.e.c.*",05,WORK_SCHOOL,OUT_OF_HOME,0
+059999,"Work and work-related activities, n.e.c.*",05,WORK_SCHOOL,OUT_OF_HOME,0
+060101,"Taking class for degree, certification, or licensure",06,WORK_SCHOOL,OUT_OF_HOME,0
+060102,Taking class for personal interest,06,WORK_SCHOOL,OUT_OF_HOME,0
+060103,Waiting associated with taking classes,06,WORK_SCHOOL,OUT_OF_HOME,0
+060104,Security procedures rel. to taking classes,06,WORK_SCHOOL,OUT_OF_HOME,0
+060199,"Taking class, n.e.c.*",06,WORK_SCHOOL,OUT_OF_HOME,0
+060201,Extracurricular club activities,06,WORK_SCHOOL,OUT_OF_HOME,0
+060202,Extracurricular music & performance activities,06,WORK_SCHOOL,OUT_OF_HOME,0
+060203,Extracurricular student government activities,06,WORK_SCHOOL,OUT_OF_HOME,0
+060289,"Education-related extracurricular activities, n.e.c.* Includes 060204 (2004 and later years); 060299 (all years)",06,WORK_SCHOOL,OUT_OF_HOME,0
+060301,"Research/homework for class for degree, certification, or licensure",06,WORK_SCHOOL,OUT_OF_HOME,0
+060302,Research/homework for class for pers. interest,06,WORK_SCHOOL,OUT_OF_HOME,0
+060303,Waiting associated with research/homework,06,WORK_SCHOOL,OUT_OF_HOME,0
+060399,Research/homework n.e.c.*,06,WORK_SCHOOL,OUT_OF_HOME,0
+060401,"Administrative activities: class for degree, certification, or licensure",06,WORK_SCHOOL,OUT_OF_HOME,0
+060402,Administrative activities: class for personal interest,06,WORK_SCHOOL,OUT_OF_HOME,0
+060403,Waiting associated w/admin. activities (education),06,WORK_SCHOOL,OUT_OF_HOME,0
+060499,"Administrative for education, n.e.c.*",06,WORK_SCHOOL,OUT_OF_HOME,0
+069999,"Education, n.e.c.*",06,WORK_SCHOOL,OUT_OF_HOME,0
+070101,Grocery shopping,07,SHOPPING,OUT_OF_HOME,0
+070102,Purchasing gas,07,SHOPPING,OUT_OF_HOME,0
+070103,Purchasing food (not groceries),07,SHOPPING,OUT_OF_HOME,0
+070104,"Shopping, except groceries, food and gas",07,SHOPPING,OUT_OF_HOME,0
+070105,Waiting associated with shopping,07,SHOPPING,OUT_OF_HOME,0
+070199,"Shopping, n.e.c.*",07,SHOPPING,OUT_OF_HOME,0
+070201,Comparison shopping,07,SHOPPING,OUT_OF_HOME,0
+070299,"Researching purchases, n.e.c.*",07,SHOPPING,OUT_OF_HOME,0
+070301,Security procedures rel. to consumer purchases,07,SHOPPING,OUT_OF_HOME,0
+070399,"Security procedures rel. to consumer purchases, n.e.c.*",07,SHOPPING,OUT_OF_HOME,0
+079999,"Consumer purchases, n.e.c.*",07,SHOPPING,OUT_OF_HOME,0
+080101,Using paid childcare services,08,CHILDCARE,NON_ELECTRIC,0
+080102,Waiting associated w/purchasing childcare svcs,08,SHOPPING,OUT_OF_HOME,0
+080199,"Using paid childcare services, n.e.c.*",08,OTHER_NON_ELEC,NON_ELECTRIC,0
+080201,Banking,08,GOV_SERVICES,OUT_OF_HOME,0
+080202,Using other financial services,08,GOV_SERVICES,OUT_OF_HOME,0
+080203,Waiting associated w/banking/financial services,08,GOV_SERVICES,OUT_OF_HOME,0
+080299,"Using financial services and banking, n.e.c.*",08,GOV_SERVICES,OUT_OF_HOME,0
+080301,Using legal services,08,GOV_SERVICES,OUT_OF_HOME,0
+080302,Waiting associated with legal services,08,GOV_SERVICES,OUT_OF_HOME,0
+080399,"Using legal services, n.e.c.*",08,GOV_SERVICES,OUT_OF_HOME,0
+080401,Using health and care services outside the home,08,OTHER_NON_ELEC,NON_ELECTRIC,0
+080402,Using in-home health and care services,08,OTHER_NON_ELEC,NON_ELECTRIC,0
+080403,Waiting associated with medical services,08,HEALTHCARE_OUT,OUT_OF_HOME,0
+080499,"Using medical services, n.e.c.*",08,HEALTHCARE_OUT,OUT_OF_HOME,0
+080501,Using personal care services,08,PERSONAL_CARE,NON_ELECTRIC,0
+080502,Waiting associated w/personal care services,08,PERSONAL_CARE,NON_ELECTRIC,0
+080599,"Using personal care services, n.e.c.*",08,PERSONAL_CARE,NON_ELECTRIC,0
+080601,Activities rel. to purchasing/selling real estate,08,SHOPPING,OUT_OF_HOME,0
+080602,Waiting associated w/purchasing/selling real estate,08,SHOPPING,OUT_OF_HOME,0
+080699,"Using real estate services, n.e.c.*",08,GOV_SERVICES,OUT_OF_HOME,0
+080701,Using veterinary services,08,OTHER_NON_ELEC,NON_ELECTRIC,0
+080702,Waiting associated with veterinary services,08,OTHER_NON_ELEC,NON_ELECTRIC,0
+080799,"Using veterinary services, n.e.c.*",08,OTHER_NON_ELEC,NON_ELECTRIC,0
+080801,Security procedures rel. to professional/personal svcs.,08,OTHER_NON_ELEC,NON_ELECTRIC,0
+080899,Security procedures rel. to professional/personal svcs n.e.c.*,08,OTHER_NON_ELEC,NON_ELECTRIC,0
+089999,"Professional and personal services, n.e.c.*",08,OTHER_NON_ELEC,NON_ELECTRIC,0
+090101,Using interior cleaning services,09,CLEANING_VACUUM,ELECTRICITY_CONSUMING,0
+090102,Using meal preparation services,09,OTHER_NON_ELEC,NON_ELECTRIC,0
+090103,Using clothing repair and cleaning services,09,APPLIANCE_TOOL_USE,ELECTRICITY_CONSUMING,0
+090104,Waiting associated with using household services,09,OTHER_NON_ELEC,NON_ELECTRIC,0
+090199,"Using household services, n.e.c.*",09,OTHER_NON_ELEC,NON_ELECTRIC,0
+090201,Using home maint/repair/décor/construction svcs,09,APPLIANCE_TOOL_USE,ELECTRICITY_CONSUMING,0
+090202,Waiting associated w/ home main/repair/décor/constr,09,APPLIANCE_TOOL_USE,ELECTRICITY_CONSUMING,0
+090299,"Using home maint/repair/décor/constr services, n.e.c.*",09,APPLIANCE_TOOL_USE,ELECTRICITY_CONSUMING,0
+090301,Using pet services,09,OTHER_NON_ELEC,NON_ELECTRIC,0
+090302,Waiting associated with pet services,09,OTHER_NON_ELEC,NON_ELECTRIC,0
+090399,"Using pet services, n.e.c.*",09,OTHER_NON_ELEC,NON_ELECTRIC,0
+090401,Using lawn and garden services,09,OUTSIDE_HOUSE,NON_ELECTRIC,0
+090402,Waiting associated with using lawn & garden services,09,OUTSIDE_HOUSE,NON_ELECTRIC,0
+090499,"Using lawn and garden services, n.e.c.*",09,OUTSIDE_HOUSE,NON_ELECTRIC,0
+090501,Using vehicle maintenance or repair services,09,APPLIANCE_TOOL_USE,ELECTRICITY_CONSUMING,0
+090502,Waiting associated with vehicle main. or repair svcs,09,APPLIANCE_TOOL_USE,ELECTRICITY_CONSUMING,0
+090599,"Using vehicle maint. & repair svcs, n.e.c.*",09,APPLIANCE_TOOL_USE,ELECTRICITY_CONSUMING,0
+099999,"Using household services, n.e.c.*",09,OTHER_NON_ELEC,NON_ELECTRIC,0
+100101,Using police and fire services,10,GOV_SERVICES,OUT_OF_HOME,0
+100102,Using social services,10,GOV_SERVICES,OUT_OF_HOME,0
+100103,"Obtaining licenses & paying fines, fees, taxes",10,GOV_SERVICES,OUT_OF_HOME,0
+100199,"Using government services, n.e.c.*",10,GOV_SERVICES,OUT_OF_HOME,0
+100201,Civic obligations & participation,10,GOV_SERVICES,OUT_OF_HOME,0
+100299,"Civic obligations & participation, n.e.c.*",10,GOV_SERVICES,OUT_OF_HOME,0
+100381,"Waiting associated with using government services Includes 100301 (2003-2007), 100302 (2003-2007), 100304 (2008 and later years).",10,GOV_SERVICES,OUT_OF_HOME,0
+100383,"Waiting associated w/civic obligations & participation Includes 100303 (2003-2007), 100305 (2008 and later years)",10,GOV_SERVICES,OUT_OF_HOME,0
+100399,"Waiting assoc. w/govt svcs or civic obligations, n.e.c.*",10,GOV_SERVICES,OUT_OF_HOME,0
+100401,Security procedures rel. to govt svcs/civic obligations,10,GOV_SERVICES,OUT_OF_HOME,0
+100499,"Security procedures rel. to govt svcs/civic obligations, n.e.c.*",10,GOV_SERVICES,OUT_OF_HOME,0
+109999,"Government services, n.e.c.*",10,GOV_SERVICES,OUT_OF_HOME,0
+110101,Eating and drinking,11,EAT_DRINK,NON_ELECTRIC,0
+110199,"Eating and drinking, n.e.c.*",11,EAT_DRINK,NON_ELECTRIC,0
+110281,"Waiting associated w/eating & drinking Includes 110201 (All years); 110202, 110203 (2003)",11,EAT_DRINK,NON_ELECTRIC,0
+110289,"Waiting associated with eating & drinking, n.e.c.* Includes 110204 (2003); 110299 (All years)",11,EAT_DRINK,NON_ELECTRIC,0
+119999,"Eating and drinking, n.e.c.*",11,EAT_DRINK,NON_ELECTRIC,0
+120101,Socializing and communicating with others,12,SOCIAL_HOME,NON_ELECTRIC,0
+120199,"Socializing and communicating, n.e.c.*",12,SOCIAL_HOME,NON_ELECTRIC,0
+120201,Attending or hosting parties/receptions/ceremonies,12,SOCIAL_HOME,NON_ELECTRIC,0
+120202,Attending meetings for personal interest (not volunteering),12,SOCIAL_HOME,NON_ELECTRIC,0
+120299,"Attending/hosting social events, n.e.c.*",12,OTHER_NON_ELEC,NON_ELECTRIC,0
+120301,"Relaxing, thinking",12,OTHER_NON_ELEC,NON_ELECTRIC,0
+120302,Tobacco and drug use,12,OTHER_NON_ELEC,NON_ELECTRIC,0
+120303,Television and movies (not religious),12,WORK_ENTERTAINMENT,ELECTRICITY_CONSUMING,0
+120304,Television (religious),12,WORK_ENTERTAINMENT,ELECTRICITY_CONSUMING,0
+120305,Listening to the radio,12,WORK_ENTERTAINMENT,ELECTRICITY_CONSUMING,0
+120306,Listening to/playing music (not radio),12,WORK_ENTERTAINMENT,ELECTRICITY_CONSUMING,0
+120307,Playing games,12,WORK_ENTERTAINMENT,ELECTRICITY_CONSUMING,0
+120308,Computer use for leisure (exc. Games),12,WORK_ENTERTAINMENT,ELECTRICITY_CONSUMING,0
+120309,Arts and crafts as a hobby,12,OTHER_NON_ELEC,NON_ELECTRIC,0
+120310,Collecting as a hobby,12,READ_PAPERWORK_NON_ELEC,NON_ELECTRIC,0
+120311,"Hobbies, except arts & crafts and collecting",12,OTHER_NON_ELEC,NON_ELECTRIC,0
+120312,Reading for personal interest,12,READ_PAPERWORK_NON_ELEC,NON_ELECTRIC,0
+120313,Writing for personal interest,12,OTHER_NON_ELEC,NON_ELECTRIC,0
+120399,"Relaxing and leisure, n.e.c.*",12,OTHER_NON_ELEC,NON_ELECTRIC,0
+120401,Attending performing arts,12,ENTERTAINMENT_OUT,OUT_OF_HOME,0
+120402,Attending museums,12,ENTERTAINMENT_OUT,OUT_OF_HOME,0
+120403,Attending movies/film,12,ENTERTAINMENT_OUT,OUT_OF_HOME,0
+120404,Attending gambling establishments,12,ENTERTAINMENT_OUT,OUT_OF_HOME,0
+120405,Security procedures rel. to arts & entertainment,12,ENTERTAINMENT_OUT,OUT_OF_HOME,0
+120499,"Arts and entertainment, n.e.c.*",12,OTHER_NON_ELEC,NON_ELECTRIC,0
+120501,Waiting assoc. w/socializing & communicating,12,OTHER_NON_ELEC,NON_ELECTRIC,0
+120502,Waiting assoc. w/attending/hosting social events,12,OTHER_NON_ELEC,NON_ELECTRIC,0
+120503,Waiting associated with relaxing/leisure,12,OTHER_NON_ELEC,NON_ELECTRIC,0
+120504,Waiting associated with arts & entertainment,12,OTHER_NON_ELEC,NON_ELECTRIC,0
+120599,"Waiting associated with socializing, n.e.c.*",12,OTHER_NON_ELEC,NON_ELECTRIC,0
+129999,"Socializing, relaxing, and leisure, n.e.c.*",12,OTHER_NON_ELEC,NON_ELECTRIC,0
+130101,Doing aerobics,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130102,Playing baseball,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130103,Playing basketball,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130104,Biking,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130105,Playing billiards,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130106,Boating,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130107,Bowling,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130108,"Climbing, spelunking, caving",13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130109,Dancing,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130110,Participating in equestrian sports,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130111,Fencing,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130112,Fishing,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130113,Playing football,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130114,Golfing,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130115,Doing gymnastics,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130116,Hiking,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130117,Playing hockey,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130118,Hunting,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130119,Participating in martial arts,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130120,Playing racquet sports,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130121,Participating in rodeo competitions,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130122,Rollerblading,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130123,Playing rugby,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130124,Running,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130125,"Skiing, ice skating, snowboarding",13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130126,Playing soccer,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130127,Softball,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130128,Using cardiovascular equipment,13,APPLIANCE_TOOL_USE,ELECTRICITY_CONSUMING,0
+130129,Vehicle touring/racing,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130130,Playing volleyball,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130131,Walking,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130132,Participating in water sports,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130133,Weightlifting/strength training,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130134,"Working out, unspecified",13,WORK_SCHOOL,OUT_OF_HOME,0
+130135,Wrestling,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130136,Doing yoga,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130199,Playing sports n.e.c.*,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130201,Watching aerobics,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130202,Watching baseball,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130203,Watching basketball,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130204,Watching biking,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130205,Watching billiards,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130206,Watching boating,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130207,Watching bowling,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130208,"Watching climbing, spelunking, caving",13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130209,Watching dancing,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130210,Watching equestrian sports,13,ENTERTAINMENT_OUT,OUT_OF_HOME,0
+130211,Watching fencing,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130212,Watching fishing,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130213,Watching football,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130214,Watching golfing,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130215,Watching gymnastics,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130216,Watching hockey,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130217,Watching martial arts,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130218,Watching racquet sports,13,ENTERTAINMENT_OUT,OUT_OF_HOME,0
+130219,Watching rodeo competitions,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130220,Watching rollerblading,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130221,Watching rugby,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130222,Watching running,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130223,"Watching skiing, ice skating, snowboarding",13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130224,Watching soccer,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130225,Watching softball,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130226,Watching vehicle touring/racing,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130227,Watching volleyball,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130228,Watching walking,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130229,Watching water sports,13,ENTERTAINMENT_OUT,OUT_OF_HOME,0
+130230,Watching weightlifting/strength training,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130231,"Watching people working out, unspecified",13,WORK_SCHOOL,OUT_OF_HOME,0
+130232,Watching wrestling,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130299,"Attending sporting events, n.e.c.*",13,ENTERTAINMENT_OUT,OUT_OF_HOME,0
+130301,Waiting related to playing sports or exercising,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130302,Waiting related to attending sporting events,13,ENTERTAINMENT_OUT,OUT_OF_HOME,0
+130399,"Waiting associated with sports, exercise, & recreation, n.e.c.*",13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130401,Security related to playing sports or exercising,13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+130402,Security related to attending sporting events,13,ENTERTAINMENT_OUT,OUT_OF_HOME,0
+130499,"Security related to sports, exercise, & recreation, n.e.c.*",13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+139999,"Sports, exercise, & recreation, n.e.c.*",13,OUTDOOR_EXERCISE,OUT_OF_HOME,0
+140101,Attending religious services,14,OTHER_NON_ELEC,NON_ELECTRIC,0
+140102,Participation in religious practices,14,OTHER_NON_ELEC,NON_ELECTRIC,0
+140103,Waiting associated w/religious & spiritual activities,14,OTHER_NON_ELEC,NON_ELECTRIC,0
+140104,Security procedures rel. to religious & spiritual activities,14,OTHER_NON_ELEC,NON_ELECTRIC,0
+140105,Religious education activities categories.,14,OTHER_NON_ELEC,NON_ELECTRIC,0
+149999,"Religious and spiritual activities, n.e.c.*",14,OTHER_NON_ELEC,NON_ELECTRIC,0
+150101,Computer use,15,WORK_ENTERTAINMENT,ELECTRICITY_CONSUMING,0
+150102,Organizing and preparing,15,OTHER_NON_ELEC,NON_ELECTRIC,0
+150103,Reading,15,OTHER_NON_ELEC,NON_ELECTRIC,0
+150104,Telephone calls (except hotline counseling),15,WORK_ENTERTAINMENT,ELECTRICITY_CONSUMING,0
+150105,Writing,15,OTHER_NON_ELEC,NON_ELECTRIC,0
+150106,Fundraising,15,OTHER_NON_ELEC,NON_ELECTRIC,0
+150199,"Administrative & support activities, n.e.c.*",15,OTHER_NON_ELEC,NON_ELECTRIC,0
+150201,"Food preparation, presentation, clean-up",15,COOKING,ELECTRICITY_CONSUMING,0
+150202,Collecting & delivering clothing & other goods,15,OTHER_NON_ELEC,NON_ELECTRIC,0
+150203,Providing care,15,OTHER_NON_ELEC,NON_ELECTRIC,0
+150204,"Teaching, leading, counseling, mentoring",15,OTHER_NON_ELEC,NON_ELECTRIC,0
+150299,"Social service & care activities, n.e.c.*",15,OTHER_NON_ELEC,NON_ELECTRIC,0
+150301,"Building houses, wildlife sites, & other structures",15,OTHER_NON_ELEC,NON_ELECTRIC,0
+150302,"Indoor & outdoor maintenance, repair, & clean-up",15,DISHWASHING,ELECTRICITY_CONSUMING,0
+150399,"Indoor & outdoor maintenance, building & clean-up activities, n.e.c.*",15,DISHWASHING,ELECTRICITY_CONSUMING,0
+150401,Performing,15,OTHER_NON_ELEC,NON_ELECTRIC,0
+150402,Serving at volunteer events & cultural activities,15,OTHER_NON_ELEC,NON_ELECTRIC,0
+150499,"Participating in performance & cultural activities, n.e.c.*",15,OTHER_NON_ELEC,NON_ELECTRIC,0
+150501,"Attending meetings, conferences, & training",15,OTHER_NON_ELEC,NON_ELECTRIC,0
+150599,"Attending meetings, conferences, & training, n.e.c.*",15,OTHER_NON_ELEC,NON_ELECTRIC,0
+150601,Public health activities,15,OTHER_NON_ELEC,NON_ELECTRIC,0
+150602,Public safety activities,15,OTHER_NON_ELEC,NON_ELECTRIC,0
+150699,"Public health & safety activities, n.e.c.*",15,OTHER_NON_ELEC,NON_ELECTRIC,0
+159989,"Volunteer activities, n.e.c.* 150801, 150899 (2007 and later years); 159999 (All years)",15,OTHER_NON_ELEC,NON_ELECTRIC,0
+160101,Telephone calls to/from family members,16,WORK_ENTERTAINMENT,ELECTRICITY_CONSUMING,0
+160102,"Telephone calls to/from friends, neighbors, or acquaintances",16,WORK_ENTERTAINMENT,ELECTRICITY_CONSUMING,0
+160103,Telephone calls to/from education services providers,16,WORK_ENTERTAINMENT,ELECTRICITY_CONSUMING,0
+160104,Telephone calls to/from salespeople,16,WORK_ENTERTAINMENT,ELECTRICITY_CONSUMING,0
+160105,Telephone calls to/from professional or personal care svcs providers,16,WORK_ENTERTAINMENT,ELECTRICITY_CONSUMING,0
+160106,Telephone calls to/from household services providers,16,WORK_ENTERTAINMENT,ELECTRICITY_CONSUMING,0
+160107,Telephone calls to/from paid child or adult care providers,16,WORK_ENTERTAINMENT,ELECTRICITY_CONSUMING,0
+160108,Telephone calls to/from government officials,16,WORK_ENTERTAINMENT,ELECTRICITY_CONSUMING,0
+169989,"Telephone calls, n.e.c.* Includes 160199, 160201, 160299 (2004 and later years); 169999 (All years)",16,WORK_ENTERTAINMENT,ELECTRICITY_CONSUMING,0
+180101,"Travel related to personal care includes 170101 (2003-2004), 180101 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+180199,"Travel related to personal care, n.e.c.* includes 170199 (2003-2004), 180199 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+180280,Travel related to household activities and later years),18,TRAVEL,OUT_OF_HOME,0
+180381,"Travel related to caring for and helping hh children Includes 170301 (2003, 2004); 180301, 180302, 180303 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+180382,"Travel related to caring for and helping hh adults Includes 170302 (2003, 2004); 180304, 180305 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+180399,"Travel rel. to caring for & helping hh members, n.e.c.* Includes 170399 (2003-2004); 180399 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+180481,"Travel related to caring for and helping nonhh children Includes 170401 (2003-2004); 180401, 180402, 180403 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+180482,"Travel related to caring for and helping nonhh adults Includes 170402 (2003-2004); 180404, 180405 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+180499,"Travel rel. to caring for & helping nonhh members, n.e.c.* includes 170499 (2003-2004); 180499 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+180501,Travel related to working includes 170501 (2003-2004); 180501 (2005 and later years),18,WORK_SCHOOL,OUT_OF_HOME,0
+180502,Travel related to work-related activities includes 170502 (2003-2004); 180502 (2005 and later years),18,WORK_SCHOOL,OUT_OF_HOME,0
+180589,"Travel related to work, n.e.c.* 180503, 180504, 180599 (2005 and later years)",18,WORK_SCHOOL,OUT_OF_HOME,0
+180601,Travel related to taking class includes 170601 (2003-2004); 180601 (2005 and later years),18,WORK_SCHOOL,OUT_OF_HOME,0
+180682,"Travel related to education (except taking class) Includes 170602 (2003, 2004); 180602, 180603, 180604 (2005 and later years)",18,WORK_SCHOOL,OUT_OF_HOME,0
+180699,"Travel related to education, n.e.c.* includes 170699 (2003-2004); 180699 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+180701,Travel related to grocery shopping includes 170701 (2003-2004); 180701 (2005 and later years),18,SHOPPING,OUT_OF_HOME,0
+180782,"Travel related to shopping (except grocery shopping) 180702, 180703, 180704, 180799 (2005 and later years)",18,SHOPPING,OUT_OF_HOME,0
+180801,Travel related to using childcare services includes 170801 (2003-2004); 180801 (2005 and later years),18,TRAVEL,OUT_OF_HOME,0
+180802,Travel related to using financial services and banking includes 170802 (2003-2004); 180802 (2005 and later years),18,GOV_SERVICES,OUT_OF_HOME,0
+180803,Travel related to using legal services includes 170803 (2003-2004); 180803 (2005 and later years),18,GOV_SERVICES,OUT_OF_HOME,0
+180804,Travel related to using medical services includes 170804 (2003-2004); 180804 (2005 and later years),18,HEALTHCARE_OUT,OUT_OF_HOME,0
+180805,Travel related to using personal care services includes 170805 (2003-2004); 180805 (2005 and later years),18,PERSONAL_CARE,NON_ELECTRIC,0
+180806,Travel related to using real estate services includes 170806 (2003-2004); 180806 (2005 and later years),18,GOV_SERVICES,OUT_OF_HOME,0
+180807,Travel related to using veterinary services includes 170807 (2003-2004); 180807 (2005 and later years),18,OTHER_NON_ELEC,NON_ELECTRIC,0
+180899,"Travel rel. to using prof. & personal care services, n.e.c.* includes 170899 (2003-2004); 180899 (2005 and later years)",18,PERSONAL_CARE,NON_ELECTRIC,0
+180901,Travel related to using household services includes 170901 (2003-2004); 180901 (2005 and later years),18,TRAVEL,OUT_OF_HOME,0
+180902,Travel related to using home main./repair/décor./construction svcs includes 170902 (2003-2004); 180902 (2005 and later years),18,APPLIANCE_TOOL_USE,ELECTRICITY_CONSUMING,0
+180903,Travel related to using pet services (not vet) includes 170903 (2003-2004); 180903 (2005 and later years),18,OTHER_NON_ELEC,NON_ELECTRIC,0
+180904,Travel related to using lawn and garden services includes 170904 (2003-2004); 180904 (2005 and later years),18,OUTSIDE_HOUSE,NON_ELECTRIC,0
+180905,Travel related to using vehicle maintenance & repair services includes 170905 (2003-2004); 180905 (2005 and later years),18,APPLIANCE_TOOL_USE,ELECTRICITY_CONSUMING,0
+180999,"Travel related to using household services, n.e.c.* includes 170999 (2003-2004); 180999 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+181081,"Travel related to using government services includes 171001, 171002, 171003 (2003-2004); 181001 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+181002,Travel related to civic obligations & participation includes 171004 (2003-2004); 181002 (2005 and later years),18,TRAVEL,OUT_OF_HOME,0
+181099,"Travel rel. to govt svcs & civic obligations, n.e.c.* includes 171099 (2003-2004); 181099 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+181101,Travel related to eating and drinking includes 171101 (2003-2004); 181101 (2005 and later years),18,EAT_DRINK,NON_ELECTRIC,0
+181199,"Travel related to eating and drinking, n.e.c.* includes 171199 (2003-2004); 181199 (2005 and later years)",18,EAT_DRINK,NON_ELECTRIC,0
+181201,Travel related to socializing and communicating includes 171201 (2003-2004); 181201 (2005 and later years),18,SOCIAL_HOME,NON_ELECTRIC,0
+181202,Travel related to attending or hosting social events includes 171202 (2003-2004); 181202 (2005 and later years),18,TRAVEL,OUT_OF_HOME,0
+181283,"Travel related to relaxing and leisure Includes 171203 (2003-2004); 181203, 181205 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+181204,Travel related to arts and entertainment includes 171204 (2003-2004); 181204 (2005 and later years),18,TRAVEL,OUT_OF_HOME,0
+181299,"Travel rel. to socializing, relaxing, & leisure, n.e.c.* includes 171299 (2003-2004); 181299 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+181301,Travel related to participating in sports/exercise/recreation includes 171301 (2003-2004); 181301 (2005 and later years),18,TRAVEL,OUT_OF_HOME,0
+181302,Travel related to attending sporting/recreational events includes 171302 (2003-2004); 181302 (2005 and later years),18,TRAVEL,OUT_OF_HOME,0
+181399,"Travel related to sports, exercise, & recreation, n.e.c.* includes 171399 (2003-2004); 181399 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+181401,Travel related to religious/spiritual practices includes 171401 (2003-2004); 181401 (2005 and later years),18,OTHER_NON_ELEC,NON_ELECTRIC,0
+181499,"Travel rel. to religious/spiritual activities, n.e.c.* includes 171499 (2003-2004); 181499 (2005 and later years)",18,OTHER_NON_ELEC,NON_ELECTRIC,0
+181501,Travel related to volunteering includes 171501 (2003-2004); 181501 (2005 and later years),18,TRAVEL,OUT_OF_HOME,0
+181599,"Travel related to volunteer activities, n.e.c.* includes 171599 (2003-2004); 181599 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+181601,Travel related to phone calls includes 171601 (2003-2004); 181601 (2005 and later years),18,TRAVEL,OUT_OF_HOME,0
+181699,"Travel rel. to phone calls, n.e.c.* includes 171699 (2003-2004); 181699 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+181801,Security procedures related to traveling includes 171701 (2003-2004); 181801 (2005 and later years),18,TRAVEL,OUT_OF_HOME,0
+181899,"Security procedures related to traveling, n.e.c.* includes 171799 (2003-2004); 181899 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+189999,"Traveling, n.e.c.* includes 179999 (2003-2004); 189999 (2005 and later years)",18,TRAVEL,OUT_OF_HOME,0
+500101,Insufficient detail in verbatim,50,OTHER_NON_ELEC,NON_ELECTRIC,0
+500103,Missing travel or destination,50,OTHER_NON_ELEC,NON_ELECTRIC,0
+500104,Recorded simultaneous activities incorrectly code was used in 2003-2012 only,50,OTHER_NON_ELEC,NON_ELECTRIC,0
+500105,"Respondent refused to provide information/""none of your business""",50,OTHER_NON_ELEC,NON_ELECTRIC,0
+500106,Gap/can't remember,50,OTHER_NON_ELEC,NON_ELECTRIC,0
+500107,Unable to code activity at 1st tier,50,OTHER_NON_ELEC,NON_ELECTRIC,0
+509989,"Data codes, n.e.c.* includes 500102 (2003); 509999 (All years)",50,OTHER_NON_ELEC,NON_ELECTRIC,0

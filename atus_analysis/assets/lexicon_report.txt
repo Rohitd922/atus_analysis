@@ -1,0 +1,74 @@
+ATUS Lexicon Mapping Report
+============================
+Total rows: 431
+
+Sub-name distribution:
+  OTHER_NON_ELEC             128   29.7%
+  OUTDOOR_EXERCISE            68   15.8%
+  WORK_SCHOOL                 44   10.2%
+  TRAVEL                      30    7.0%
+  GOV_SERVICES                23    5.3%
+  APPLIANCE_TOOL_USE          17    3.9%
+  WORK_ENTERTAINMENT          17    3.9%
+  SHOPPING                    16    3.7%
+  PERSONAL_CARE               14    3.2%
+  ENTERTAINMENT_OUT           11    2.6%
+  HEALTHCARE_OUT              11    2.6%
+  ADMIN_AT_HOME               10    2.3%
+  OUTSIDE_HOUSE               10    2.3%
+  EAT_DRINK                    8    1.9%
+  SOCIAL_HOME                  5    1.2%
+  CLEANING_VACUUM              4    0.9%
+  DISHWASHING                  4    0.9%
+  SLEEP                        3    0.7%
+  COOKING                      3    0.7%
+  READ_PAPERWORK_NON_ELEC      2    0.5%
+  LAUNDRY                      1    0.2%
+  HVAC_ADJUST                  1    0.2%
+  CHILDCARE                    1    0.2%
+
+OTHER_NON_ELEC:   128 (29.7%)
+OTHER_ELECTRIC:     0 ( 0.0%)
+AMBIGUOUS major:     0 (  0.0%)
+
+Top 40 codes in OTHER_NON_ELEC (for rule tuning):
+  020103  Sewing, repairing, & maintaining textiles
+  020104  Storing interior hh items, inc. food
+  020301  Interior arrangement, decoration, & repairs
+  020399  Interior maintenance, repair, & decoration, n.e.c.*
+  020681  Care for animals and pets (not veterinary care) includes 020601 (all years), 020602 (2008 and later years)
+  020699  Pet and animal care, n.e.c.*
+  020905  Home security
+  029999  Household activities, n.e.c.*
+  030101  Physical care for hh children
+  030102  Reading to/with hh children
+  030103  Playing with hh children, not sports
+  030104  Arts and crafts with hh children
+  030105  Playing sports with hh children
+  030186  Talking with/listening to hh children includes 030106 (all years), 030107 (2003)
+  030109  Looking after hh children (as a primary activity)
+  030110  Attending hh children's events
+  030111  Waiting for/with hh children
+  030112  Picking up/dropping off hh children
+  030199  Caring for & helping hh children, n.e.c.*
+  030201  Homework (hh children)
+  030202  Meetings and school conferences (hh children)
+  030203  Home schooling of hh children
+  030204  Waiting associated with hh children's education
+  030299  Activities related to hh child's education, n.e.c.*
+  030303  Waiting associated with hh children's health
+  030399  Activities related to hh child's health, n.e.c.*
+  030401  Physical care for hh adults
+  030402  Looking after hh adult (as a primary activity)
+  030405  Waiting associated with caring for household adults
+  030499  Caring for household adults, n.e.c.*
+  030501  Helping hh adults
+  030503  Picking up/dropping off hh adult
+  030504  Waiting associated with helping hh adults
+  030599  Helping household adults, n.e.c.*
+  039999  Caring for & helping hh members, n.e.c.*
+  040101  Physical care for nonhh children
+  040102  Reading to/with nonhh children
+  040103  Playing with nonhh children, not sports
+  040104  Arts and crafts with nonhh children
+  040105  Playing sports with nonhh children
