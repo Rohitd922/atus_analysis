@@ -1,12 +1,26 @@
-# environment.yml  (Conda users)
 name: atus_env
 channels:
-  - conda-forge     # always put conda-forge first for latest builds
+  - conda-forge
+  - defaults
+channel_priority: strict
+
 dependencies:
-  - python=3.11     # lock the interpreter version
-  - pandas>=2.2
-  - numpy>=1.26
-  - requests>=2.31
-  - lxml>=5.2
-  - tqdm>=4.66
-  - pip   
+  - python=3.12.2
+  - numpy=1.26.4
+  - pandas=2.2.2
+  - pyarrow=15.0.2
+  - fastparquet=2024.5.0
+  - lxml=5.2.2
+  - tqdm=4.66.4
+  - beautifulsoup4=4.12.3
+  - scikit-learn=1.4.2
+  - scipy=1.11.4
+  - matplotlib=3.8.4
+  - seaborn=0.13.2
+  - statsmodels=0.14.1
+  - requests=2.32.3
+  - jupyter=1.0.0        # pulls notebook, qtconsole, nbconvert, etc.
+  - ipykernel=6.29.4
+  - jupytext=1.16.1
+  - pdfplumber=0.11.0
+  - pip                  # keep pip available inside the env
