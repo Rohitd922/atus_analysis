@@ -225,10 +225,12 @@ def main():
     # ───────────────────  evaluation  ──────────────────────────────────────
     logger.info("Evaluating models on test set...")
     m_b1 = nll_b1(test_df, b1h, n_states, args.weight_col)
-    logger.info(f"B1-H test NLL: {m_b1.get('nll', 'N/A'):.4f}")
+    nll_b1_val = m_b1.get('nll', 'N/A')
+    logger.info(f"B1-H test NLL: {nll_b1_val:.4f}" if isinstance(nll_b1_val, (int, float)) else f"B1-H test NLL: {nll_b1_val}")
     
     m_b2 = nll_b2(test_df, b2h, dwell_edges, n_states, args.weight_col)
-    logger.info(f"B2-H test NLL: {m_b2.get('nll', 'N/A'):.4f}")
+    nll_b2_val = m_b2.get('nll', 'N/A')
+    logger.info(f"B2-H test NLL: {nll_b2_val:.4f}" if isinstance(nll_b2_val, (int, float)) else f"B2-H test NLL: {nll_b2_val}")
 
     eval_data = {
         "b1h": m_b1,

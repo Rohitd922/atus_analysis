@@ -15,6 +15,7 @@ Derived subgroup columns (all created here if missing):
   * hh_size_band   (from TRNUMHOU or HRNUMHOU → {"1","2","3","4plus"})
   * region         (from GEREG: {1,2,3,4} → {"Northeast","Midwest","South","West"})
   * month          (from TUMONTH: 1..12)
+  * quarter        (from TUMONTH: Q1=Jan-Mar, Q2=Apr-Jun, Q3=Jul-Sep, Q4=Oct-Dec)
 
 Weights:
   * Prefers TUFNWGTP (ATUS final person weight). If absent, falls back to TU20FWGT.
@@ -101,6 +102,17 @@ def derive_month(df: pd.DataFrame) -> pd.Series:
     """
     if "TUMONTH" in df.columns:
         return df["TUMONTH"].where(df["TUMONTH"].between(1, 12)).astype("Int64").astype("string").fillna("Unknown")
+    return pd.Series(["Unknown"] * len(df), index=df.index, dtype="object")
+
+
+def derive_quarter(df: pd.DataFrame) -> pd.Series:
+    """
+    From TUMONTH (1..12) derive quarter (Q1, Q2, Q3, Q4).
+    """
+    if "TUMONTH" in df.columns:
+        month = df["TUMONTH"].where(df["TUMONTH"].between(1, 12))
+        quarter = pd.cut(month, bins=[0, 3, 6, 9, 12], labels=["Q1", "Q2", "Q3", "Q4"], include_lowest=True)
+        return quarter.astype("string").fillna("Unknown")
     return pd.Series(["Unknown"] * len(df), index=df.index, dtype="object")
 
 
@@ -197,6 +209,7 @@ def ensure_subgroup_columns(df: pd.DataFrame) -> pd.DataFrame:
     out["hh_size_band"] = derive_hh_size_band(out)
     out["region"] = derive_region(out)
     out["month"] = derive_month(out)
+    out["quarter"] = derive_quarter(out)
     return out
 
 
@@ -301,7 +314,8 @@ def main():
             "day_type": "TUDIARYDAY weekend={1,7}",
             "hh_size_band": "TRNUMHOU→HRNUMHOU mapped to {'1','2','3','4plus'}",
             "region": "GEREG {1,2,3,4} mapped to US Census regions",
-            "month": "TUMONTH 1..12 as string for grouping"
+            "month": "TUMONTH 1..12 as string for grouping",
+            "quarter": "TUMONTH derived to quarter (Q1=Jan-Mar, Q2=Apr-Jun, Q3=Jul-Sep, Q4=Oct-Dec)"
         }
     }
     with open(out_schema, "w") as f:

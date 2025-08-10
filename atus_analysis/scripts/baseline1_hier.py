@@ -138,7 +138,13 @@ def main():
     # Evaluate model
     logger.info("Evaluating model on test set...")
     metrics = nll_b1(test, model, n_states, args.weight_col)
-    logger.info(f"Test NLL: {metrics.get('nll', 'N/A'):.4f}")
+    
+    # Safe logging - handle both numeric and string values
+    nll_value = metrics.get('nll', 'N/A')
+    if isinstance(nll_value, (int, float)):
+        logger.info(f"Test NLL: {nll_value:.4f}")
+    else:
+        logger.info(f"Test NLL: {nll_value}")
     
     eval_data = {"b1h": metrics,
                "notes": {"groupby": cols,
