@@ -322,7 +322,7 @@ def fit_b2_hier(
     leave0 = np.zeros((n_states, n_bins))
     tot0   = np.zeros((n_states, n_bins))
 
-    for (_, i, d), grp in tr.groupby(["prev_state", "d_bin"]):
+    for (i, d), grp in tr.groupby(["prev_state", "d_bin"]):
         w = grp[w_col].to_numpy()
         l = grp["leave"].to_numpy()
         leave0[i, d] += float((w * l).sum())
