@@ -7,6 +7,7 @@ Inputs (defaults relative to repo root):
 - data/sequences/grid_ids.csv             # TUCASEID order for the grid
 - data/sequences/lexiconnoex0323.pdf      # ATUS activity lexicon (2003–2023)
 
+
 Outputs (same filenames/structure as the original script):
 - data/sequences/markov_sequences.parquet  (long, slot-level with state ids)
 - data/sequences/states_10min.npy          (N x 144, flat state id per slot)
