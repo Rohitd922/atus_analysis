@@ -23,4 +23,5 @@ dependencies:
   - ipykernel=6.29.4
   - jupytext=1.16.1
   - pdfplumber=0.11.0
+  - psutil=5.9.8         # system resource monitoring
   - pip                  # keep pip available inside the env

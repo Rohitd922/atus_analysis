@@ -1,0 +1,18 @@
+{
+  "session_id": "20250809_211441",
+  "started_at": "2025-08-09T21:17:51.753299",
+  "completed_rungs": [],
+  "failed_rungs": [
+    "R1"
+  ],
+  "current_rung": "R1",
+  "total_rungs": 1,
+  "mode": "batch_1_rungs",
+  "planned_rungs": [
+    "R1"
+  ],
+  "last_updated": "2025-08-09T21:17:51.753299",
+  "R1_started_at": "2025-08-09T21:17:51.753299",
+  "R1_completed_at": "2025-08-09T21:15:31.025854",
+  "R1_success": false
+}

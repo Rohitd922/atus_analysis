@@ -1,0 +1,47 @@
+Individual Experiment Commands
+Single Rung Experiments (7 total)
+
+# Rung 1 - Region only
+python atus_analysis/scripts/run_single_experiments.py --mode single --rung R1
+
+# Rung 2 - Region + Sex
+python atus_analysis/scripts/run_single_experiments.py --mode single --rung R2
+
+# Rung 3 - Region + Employment
+python atus_analysis/scripts/run_single_experiments.py --mode single --rung R3
+
+# Rung 4 - Region + Day Type
+python atus_analysis/scripts/run_single_experiments.py --mode single --rung R4
+
+# Rung 5 - Region + Household Size
+python atus_analysis/scripts/run_single_experiments.py --mode single --rung R5
+
+# Rung 6 - Full Routing Model (Employment + Day Type + HH Size + Sex + Region + Quarter)
+python atus_analysis/scripts/run_single_experiments.py --mode single --rung R6
+
+# Rung 7 - Full Model with Hazard (same grouping as R6 but includes hazard model)
+python atus_analysis/scripts/run_single_experiments.py --mode single --rung R7
+
+With Conservative Safety Settings (Recommended)
+
+# R1 with extra safety
+python atus_analysis/scripts/run_single_experiments.py --mode single --rung R1 --delay 180 --max-memory 65
+
+# R2 with extra safety
+python atus_analysis/scripts/run_single_experiments.py --mode single --rung R2 --delay 180 --max-memory 65
+
+# R3 with extra safety
+python atus_analysis/scripts/run_single_experiments.py --mode single --rung R3 --delay 180 --max-memory 65
+
+# R4 with extra safety
+python atus_analysis/scripts/run_single_experiments.py --mode single --rung R4 --delay 180 --max-memory 65
+
+# R5 with extra safety
+python atus_analysis/scripts/run_single_experiments.py --mode single --rung R5 --delay 180 --max-memory 65
+
+# R6 with extra safety
+python atus_analysis/scripts/run_single_experiments.py --mode single --rung R6 --delay 180 --max-memory 65
+
+# R7 with extra safety (includes hazard model automatically)
+python atus_analysis/scripts/run_single_experiments.py --mode single --rung R7 --delay 180 --max-memory 65
+

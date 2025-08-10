@@ -21,6 +21,9 @@ requests==2.32.3
 jupyter==1.0.0
 ipykernel==6.29.4
 
+# --- system monitoring ---
+psutil==5.9.8
+
 # optional
 jupytext==1.16.1
 pdfplumber==0.11.0

@@ -33,8 +33,13 @@ python atus_analysis/scripts/run_ladders.py single --rung R3 --also_b2
 """
 
 from __future__ import annotations
-import argparse, subprocess, json, sys, time, logging
+import argparse, subprocess, json, sys, time, logging, gc
 from pathlib import Path
+import os
+
+# Set UTF-8 encoding for Windows compatibility
+if sys.platform.startswith('win'):
+    os.environ['PYTHONIOENCODING'] = 'utf-8'
 
 # Configure logging
 logging.basicConfig(
@@ -59,7 +64,7 @@ def call(cmd: list[str]):
     """Run a subprocess, stdout passthrough, abort on non-zero."""
     start_time = time.time()
     logging.info(f"Starting command: {' '.join(cmd)}")
-    print("▶", " ".join(cmd), flush=True)
+    print(">", " ".join(cmd), flush=True)  # Changed from ▶ to > for Windows compatibility
     try:
         result = subprocess.run(cmd, check=True)
         elapsed = time.time() - start_time
@@ -107,6 +112,15 @@ def run_rung(rung: str, args, split_path: Path, also_b2: bool):
         logging.info(f"✓ B2-H model completed for {rung}")
     
     logging.info(f"=== Completed rung {rung} ===")
+    
+    # Memory management
+    if args.gc:
+        logging.info("Running garbage collection...")
+        gc.collect()
+    
+    if args.delay > 0:
+        logging.info(f"Waiting {args.delay} seconds before next operation...")
+        time.sleep(args.delay)
 
 def bootstrap_r6_vs_r7(args):
     """Runs respondent-level ΔNLL bootstrap between R6 and R7."""
@@ -159,6 +173,12 @@ def main():
                       default="1,2,3,4,6,9,14,20,30")
     base.add_argument("--seed", type=int, default=2025)
     base.add_argument("--test_size", type=float, default=0.2)
+    
+    # Memory management options
+    base.add_argument("--delay", type=int, default=0,
+                      help="Delay in seconds between rungs to reduce system load")
+    base.add_argument("--gc", action="store_true",
+                      help="Force garbage collection between rungs")
 
     parent = argparse.ArgumentParser()
     sub = parent.add_subparsers(dest="cmd", required=True)
