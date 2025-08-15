@@ -7,7 +7,7 @@ Writes into <out_dir>:
 
     b2h_model.json        # fitted hazard + embedded routing
     eval_b2h.json         # weighted test metrics  (B1-H + B2-H)
-    split_assignments.parquet   (only by the first rung that creates the split)
+    split_assignments.parquet   (local copy, defaults to using central fixed_split.parquet if provided)
 
 If you already have a routing model for the **same split & group-key scheme**,
 pass it via --b1h_path to avoid refitting.

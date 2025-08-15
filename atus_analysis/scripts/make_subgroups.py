@@ -60,7 +60,7 @@ DEFAULT_OUT_PARQUET = PROCESSED / "subgroups.parquet"
 DEFAULT_OUT_SUMMARY = PROCESSED / "subgroups_summary.parquet"
 DEFAULT_OUT_SCHEMA  = PROCESSED / "subgroups_schema.json"
 
-DEFAULT_GROUPBY = ["sex", "employment", "day_type", "hh_size_band", "region", "month"]
+DEFAULT_GROUPBY = ["sex", "employment", "day_type", "hh_size_band", "region", "month", "quarter"]
 
 
 # ---------- Helpers to derive subgroup columns ----------
@@ -278,6 +278,22 @@ def main():
         weight_note = f"Using specified weight: {weight_col}"
     else:
         weight_col, weight_note = pick_weight_column(df)
+
+    # 3.5) Scale ATUS weights by 1000 as per ATUS instructions
+    if weight_col == "TUFNWGTP":
+        print(f"Scaling {weight_col} by 1/1000 as per ATUS guidelines...")
+        original_sum = df[weight_col].sum()
+        df[weight_col] = df[weight_col] / 1000.0
+        scaled_sum = df[weight_col].sum()
+        print(f"Weight scaling: {original_sum:,.0f} → {scaled_sum:,.0f}")
+        weight_note += " (scaled by 1/1000)"
+    elif weight_col == "TU20FWGT":
+        print(f"Scaling {weight_col} by 1/1000 as per ATUS guidelines...")
+        original_sum = df[weight_col].sum()
+        df[weight_col] = df[weight_col] / 1000.0
+        scaled_sum = df[weight_col].sum()
+        print(f"Weight scaling: {original_sum:,.0f} → {scaled_sum:,.0f}")
+        weight_note += " (scaled by 1/1000)"
 
     # 4) Keep minimal fields for downstream merges
     keep_cols = ["TUCASEID"] + list(set(args.groupby)) + [weight_col]

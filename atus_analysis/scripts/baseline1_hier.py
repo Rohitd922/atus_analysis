@@ -4,7 +4,7 @@ Dirichlet–multinomial hierarchical routing (B1-H).
 Writes:
     b1h_model.json
     eval_b1h.json
-    split_assignments.parquet   (first time only)
+    split_assignments.parquet   (local copy, defaults to using central fixed_split.parquet if provided)
 """
 import argparse, logging, time
 from pathlib import Path

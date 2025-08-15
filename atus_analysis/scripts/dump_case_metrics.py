@@ -6,6 +6,9 @@ Create <run_dir>/test_case_metrics.parquet with per-respondent
    • total design-weight and #transitions
 
 Supports both B1-H (routing only) and B2-H (routing + hazard).
+
+Uses central fixed_split.parquet for train/test splits, with fallback to 
+local split_assignments.parquet for backward compatibility.
 """
 
 from __future__ import annotations
@@ -70,7 +73,17 @@ def main():
     if args.model_type == "b2h":
         routing_b1 = model["routing_b1h"]
 
-    split = pd.read_parquet(run_dir / "split_assignments.parquet")[["TUCASEID", "set"]]
+    # Look for central fixed_split.parquet first, fallback to local split_assignments.parquet
+    models_dir = run_dir.parent  # Go up one level from model dir (e.g., R1) to models dir
+    central_split_file = models_dir / "fixed_split.parquet"
+    local_split_file = run_dir / "split_assignments.parquet"
+    
+    if central_split_file.exists():
+        split = pd.read_parquet(central_split_file)[["TUCASEID", "set"]]
+    elif local_split_file.exists():
+        split = pd.read_parquet(local_split_file)[["TUCASEID", "set"]]
+    else:
+        raise FileNotFoundError(f"Neither {central_split_file} nor {local_split_file} found")
 
     # -------------- data with group_key + block -----------------
     blocks = parse_time_blocks(args.time_blocks)
@@ -103,9 +116,11 @@ def main():
     # for hazard we also need dwell bin at t-1
     if args.model_type == "b2h":
         test_df = compute_runlengths_per_respondent(test_df)
-        prev_run = test_df.groupby("TUCASEID").shift(1)["runlen"].astype(int)
-        test_df["d_bin"] = prev_run.loc[ok].apply(
-            lambda d: len(dwell_edges) if pd.isna(d) else
+        prev_run = test_df.groupby("TUCASEID").shift(1)["runlen"]
+        # Handle NaN values before converting to int - fillna with 0 or use nullable Int64
+        prev_run_clean = prev_run.fillna(0).astype(int)
+        test_df["d_bin"] = prev_run_clean.loc[ok].apply(
+            lambda d: len(dwell_edges) if d == 0 else  # treat 0 (filled NaN) same as NaN
             next((k for k, e in enumerate(dwell_edges) if d <= e),
                  len(dwell_edges))
         )
