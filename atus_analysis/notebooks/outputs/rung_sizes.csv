@@ -1,0 +1,14 @@
+rung,covariates,size
+R0,,0
+R1,region,1
+R10,day_type,1
+R11,hh_size_band,1
+R12,quarter,1
+R2,"region,sex",2
+R3,"employment,region",2
+R4,"day_type,region",2
+R5,"hh_size_band,region",2
+R6,"quarter,region",2
+R7,"day_type,employment,hh_size_band,quarter,region,sex",6
+R8,sex,1
+R9,employment,1

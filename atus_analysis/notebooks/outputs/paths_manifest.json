@@ -1,0 +1,5 @@
+{
+  "summary_means_csv": "/ztank/scratch/user/u.rd143338/atus_analysis-main/atus_analysis/notebooks/outputs/summary_mean_metrics.csv",
+  "b1_vs_b2_csv": "/ztank/scratch/user/u.rd143338/atus_analysis-main/atus_analysis/notebooks/outputs/b1h_vs_b2h_bootstrap_R1_R6.csv",
+  "covariates_csv": null
+}

@@ -1,0 +1,42 @@
+{
+  "models_dir": "/ztank/scratch/user/u.rd143338/atus_analysis-main/atus_analysis/data/models",
+  "pairs": [
+    [
+      "Region",
+      "R0",
+      "R1"
+    ],
+    [
+      "Sex",
+      "R1",
+      "R2"
+    ],
+    [
+      "Employment",
+      "R1",
+      "R3"
+    ],
+    [
+      "Day Type",
+      "R1",
+      "R4"
+    ],
+    [
+      "HH Size",
+      "R1",
+      "R5"
+    ],
+    [
+      "Quarter",
+      "R1",
+      "R6"
+    ]
+  ],
+  "variants": [
+    "b1h",
+    "b2h"
+  ],
+  "bootstrap_B": 2000,
+  "seed": 2025,
+  "csv": "/ztank/scratch/user/u.rd143338/atus_analysis-main/atus_analysis/notebooks/outputs/covariate_ablation_results.csv"
+}
